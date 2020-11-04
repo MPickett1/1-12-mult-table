@@ -9,13 +9,13 @@ public class Main {
 
     private static void printMultTable(int start, int end){
         for(int i = start; i <= end; i++){
-            System.out.print("\t" + i);
+            System.out.printf("\t%2d", i);
         }
         System.out.println();
         for(int i=start; i <= end; i++){
-            System.out.print(i + "\t");
+            System.out.printf("%2d\t", i);
             for(int j=start; j <= end; j++){
-                System.out.print(i*j + "\t");
+                System.out.printf("%2d\t", i*j);
             }
             System.out.println();
         }
